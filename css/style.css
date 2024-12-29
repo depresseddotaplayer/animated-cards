@@ -21,22 +21,22 @@ body {
 }
 
 .animated-cards {
-    margin: 0 0 1rem 0px;
+    margin: 0 0 1rem 0;
     --padding: 1rem;
     /* padding: 11px 16px; */
     overflow: hidden;
     background-color: rgba(245, 245, 245, 1);
-    border: 1px solid rgb(8, 10, 10);
-    border-radius: 4px;
+    border: 0.0625rem solid rgb(8, 10, 10);
+    border-radius: 0.25rem;
 }
 
 .animated-cards.animated-cards-shadow {
     border: none;
-    box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, .2);
+    box-shadow: 0px 0.125rem 0.3125rem 0px rgb(0, 0, 0, .2);
 }
 
 .animated-cards-header {
-    margin: 0 0 8px 0;
+    margin: 0 0 0.5rem 0;
     padding: var(--padding);
     padding-bottom: 0;
 }
@@ -65,19 +65,20 @@ body {
 }
 
 .animated-cards-footer {
-    margin: 16px 0 0 0;
+    margin: 1rem 0 0 0;
     padding: var(--padding);
     padding-top: 0;
 }
 
 .btn {
     --color: rgb(158, 197, 171, 1);
-    padding: 8px 12px;
-    font-size: 16px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
     cursor: pointer;
     background: var(--color);
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
+    transition: 150ms background ease-in-out;
 }
 
 .btn:hover, .btn:focus {
@@ -86,7 +87,7 @@ body {
 
 .btn.btn-outline {
     background: none;
-    border: 1px solid var(--color);
+    border: 0.0625rem solid var(--color);
     color: var(--color);
 }
 
